@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        body {
+            background-size: cover;
+            background-image: linear gradient rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)
+        }
+
+        
+
+        nav {
+            background-color: black;
+            
+        }
+
+        nav .menu{
+            width: 100%; 
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav .menu a{
+            text-decoration: none;
+color: #eee;
+font-weight: bold;
+        }
+        
+        .menu a:first-child{
+            color: #00b894;
+
+        }
+
+
+        main {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        section {
+            width: auto;
+            text-align: center;
+            color: white;
+            padding-top: 20px;
+        }
+
+        section h3 {
+            font-size: 35px;
+            font-weight: 200;
+            letter-spacing: 3px;
+            text-shadow: 1px 1px 2px black;
+            text-transform: capitalize
+            
+        }
+
+        section h1 {
+            font-size: 55px;
+            font-weight: 700;
+            text-shadow: 2px 1px 5px black;
+            text-transform: uppercase;
+        }
+
+        section p {
+            font-size: 25px;
+            color: #eee;
+            word-spacing: 5px;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px black;
+        }
+        
+
+        section a {
+            padding: 12px 30px;
+            border-radius: 4px;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 500px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 0.5s ease;
+        }
+        section .btnone{
+            background: white;
+            color: #000;
+        }
+        .btnone:hover{
+            background: #00b894;
+            color: white;
+        }
+
+
+        section .btntwo{
+            background: #00b894;
+            color: white;
+        }
+        .btntwo:hover{
+            background: white;
+            color: #000;
+        }
+
+
+       .change_content:after{
+content: '';
+animation: changetext 10s infinite linear;
+color: #00b894;
+        }
+
+        @keyframes changetext{
+            0%{content:"Dehradun";}
+            20% { content:"Darjeeling"; }
+            35% { content:"jaipur"; }
+            60% { content:"Mumbai"; }
+            80% { content:"Nainital"; }
+            100% { content:"AGRA"; }
+        }
+    </style>
+</head>
+
+<body background="pexels-sudipta-mondal-1603650.jpg">
+
+    <header>
+
+        <nav style="width: 100%; height:10vh;">
+                <br><br>
+                <div class="menu">
+                    <a href="https://tourism.gov.in/">HOME</a>
+                    <a href="https://www.incredibleindia.org/content/incredibleindia/en/experiences/heritage.html#:~:text=The%20rich%20heritage%20of%20India,secular%20philosophy%20of%20its%20people.">GALLERY</a>
+                    <a href="https://tourism.gov.in/about-us/about-ministry">ABOUT</a>
+                    <a href="https://tourism.gov.in/about-us/whos-who">CONTACT</a>
+
+                </div>
+        </nav>
+        <main>
+            <section>
+                <h3>Welcome to India</h3>
+                <h1>DO COME & VISIT <span class="change_content"> </span></h1>
+                <p>"India once is not enough"</p>
+                <a href="#" class="btnone">learn more</a>
+                <a href="#" class="btntwo">signup here</a>
+            </section>
+        </main>
+
+
+
+</body>
+
+</html>
